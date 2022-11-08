@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.circle{
+    margin-top: 30px;
+    margin-left:20px;
+    width: 150px;
+    height: 150px;
+    background: crimson;
+    border-radius: 50%;
+
+    animation-name: anime;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-delay: 2s;
+}
+
+@keyframes anime {
+    0%{background-color: crimson;
+        transform:translatey(0%);
+    }
+   
+    25%{transform: translateY(50%);
+    }
+    75%{transform: translateY(25%);
+    }
+    100%{background-color:rgb(55, 34, 241);
+    transform: translatey(100%) translateY(100%) 
+    }  
+}
